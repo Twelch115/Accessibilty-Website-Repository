@@ -1,0 +1,202 @@
+* { /*for ALL elements*/
+    box-sizing: border-box; /*includes the padding and border into a elements width/height, leading to standardised sizes*/
+    font-family: "segoe ui"; /*sets the font used on the page*/
+    font-size: 16px; /*sets the font size used on the page*/
+}
+
+
+body { /*for the body element*/
+    background-color: #435165; /*set the background colour*/
+}
+
+.login { /*for the login element*/
+    width: 400px; /*sets the width of the element*/
+    background-color: #ffffff; /*sets the background colour*/
+    margin: 100px auto; /*sets the margins of the element, ie where it appears on the page*/
+}
+
+.login h1 { /*for the h1 within login*/
+    text-align: center; /*align to the center of the text*/
+    color: #5b6574; /*sets the font colour*/
+    font-size: 24px; /*overrides the font size*/
+    padding: 20px 0 20px 0; /*sets the top/bottom padding of the element*/
+    border-bottom: 1px solid #dee0e4; /*sets the placement, thickness and colour of a boarder for this element*/
+}
+
+
+.login form { /*for the form within login*/
+    display: flex; /*sets the placement of elements within the form*/
+    flex-wrap: wrap; /*controls how the content in the element wraps over lines*/
+    justify-content: center; /*aligns elements within the form to the center*/
+    padding-top: 20px; /*sets padding at the top of the  form*/
+}
+
+.login form label { /*for the label tag within login*/
+    display: flex; /*sets the placement of elements within the form*/
+    justify-content: center; /*aligns elements within the form to the center*/
+    align-items: center; /*aligns elements within the form to the center aswell*/
+    width: 50px; /*sets width of element*/
+    height: 50px; /*sets height of element*/
+    background-color: darkred; /*sets background colour*/
+    color: #ffffff; /*sets icon colour*/
+}
+
+.login form input[type="password"], .login form input[type="text"] { /*for the password and text inputs in the form*/
+    width: 310px; /*sets width of element*/
+    height: 50px; /*sets height of element*/
+    border: 1px solid #dee0e4; /*sets border type, thickness and colour*/
+    margin-bottom: 20px; /*sets a margin at the bottom of the element*/
+    padding: 0 15px; /*sets the top/bottom padding of the element*/
+}
+
+.login form input[type="submit"], .loginhelp form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+   margin-top: 20px;
+    background-color: #8b0000;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+.login form input[type="submit"]:hover, .loginhelp form input[type="submit"]:hover {
+  background-color: #a50101;
+    transition: background-color 0.2s;
+}
+
+.admin div {
+	height: 500px;
+	margin:0 auto;
+}
+.admin form {
+	width: 50%;
+	float: left;
+
+	
+}
+
+.navtop {
+	background-color: #474040;
+	height: 60px;
+	width: 100%;
+	border: 0;
+}
+
+.navtop div {
+	display: flex;
+	margin: 0 auto;
+	width: 1450px;
+	height: 100%;
+}
+
+.navtop div h1, .navtop div a, .navtop div button, .navtop div i {
+	display: inline-flex;
+	align-items: center;
+}
+
+.navtop div h1 {
+	flex: 1;
+	font-size: 24px;
+	padding: 0;
+	margin: 0;
+	color: #dadadb;
+	font-weight: normal;
+}
+
+.navtop div a {
+	padding: 0 20px;
+	text-decoration: none;
+	color: #c1c4c8;
+	font-weight: bold;
+	
+}
+
+.navtop div button {
+	background-color: #474040;
+	border: none;
+    padding: 0 20px;
+	text-decoration: none;
+	color: #c1c4c8;;
+	font-weight: bold;
+}
+
+.navtop div i {
+	text-decoration: none;
+	color: #c1c4c8;
+	font-weight: bold;
+	padding: 2px 8px 0 10px;
+	border-left: 1px solid #c1c4c8;
+}
+
+.navtop div a:hover, .navtop div i:hover {
+	color: #eaebed;
+}
+
+body.loggedin {
+	background-color: #f3f4f7;
+}
+
+.content {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.content h2 {
+	margin: 0;
+	padding: 25px 0;
+	font-size: 22px;
+	border-bottom: 1px solid #e0e0e3;
+	color: #4a536e;
+}
+
+.content > div column { /** for elements classed as 'column' **/
+    margin:0 auto; /** centers element on the page**/
+    border-style: solid; /** applies a border  to the element **/
+    border-width: 2px; /** sets the width of the border **/
+    text-align: center; /** aligns text to center of element**/
+    line-height: 70px; 
+    margin-bottom: 30px;
+    float: left;
+    width: 33%;
+    height: 100px;
+    padding: 10px;
+}
+  
+.content > div row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.content > p, .content > div, .content > form, .content > table, .content > ul {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 25px;
+	background-color: #fff;
+	width: 100%;
+}
+
+.content table {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	margin: 25px 0;
+	padding: 25px;
+	background-color: #fff;
+	width: 100%;
+}
+
+.content > p table td, .content > div table td {
+	padding: 5px;
+}
+
+.content > p table td:first-child, .content > div table td:first-child {
+	font-weight: bold;
+	color: #4a536e;
+	padding-right: 15px;
+}
+
+.content > div p {
+	padding: 5px;
+	margin: 0 0 10px 0;
+}

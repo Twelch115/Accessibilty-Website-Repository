@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!-- tells the browser what version of HTML this page is running-->
+<html> <!-- begins HTML code--> <!-- https://codeshack.io/secure-login-system-php-mysql/-->
+	<head> <!-- opens header section, for setting infomation about the page-->
+		<meta charset="utf-8"> <!-- sets the character set used in the page-->
+		<title> 92DK Stock Management</title> <!-- sets the page title-->
+        <link rel = "icon" href = "IMAGES/icon.jpg"> <!-- sets the favicon-->
+        <link href="style.css" rel="stylesheet" type="text/css"> <!-- connects the page to a stylesheet for the layout/colouring of the page-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css"> <!-- connects the page to a stylesheet for the icons being used-->
+	</head> <!-- closes the header-->
+	<body> <!-- opens body section, for setting the content of the page-->
+		<div class="login"> <!-- creates a div, a content container for the page, with the class login-->
+            <h1> <!-- sets a text box with the pre set h1 size-->
+                <img src=IMAGES/kebab.jpg width="50"height="50"> <span style="font-size: 24px; color: darkred;" >92</span> DONNER KINGS <img src=IMAGES/kebab.jpg width="50" height="50" style="transform: scaleX(-1);"> <!-- creates a h1 line of text with images & two numbers as a different colour-->
+                STOCK MANAGEMENT SYSTEM 
+			    Login
+            </h1> <!-- closes the h1 textbox -->
+			<form action="ACTIONS/authenticate.php" method="post"> <!-- creates a form that opens the authenticate.php page on submission with the post method to send data-->
+				<label for="username"> <!-- sets a label for the username input box-->
+					<i class="fas fa-user"></i> <!-- adds an icon for the username-->
+				</label> <!-- closes label section-->
+				<input type="text" name="username" placeholder="Username" id="username" required> <!-- creates a text input named username, with the placeholder text username that is required to be filled -->
+				<label for="password"> <!-- sets a label for the password input box-->
+					<i class="fas fa-lock"></i> <!-- adds an icon for the password-->
+				</label>  <!-- closes label section-->
+				<input type="password" name="password" placeholder="Password" id="password" required> <!-- creates a text input named password, with the placeholder text password that is required to be filled -->
+				<input type="submit" value="Login"> <!-- creates a submit button with the text login in it-->
+			</form> <!-- closes the form section-->
+			<div class = "loginhelp"> <!-- creates a div with the class loginhelp-->
+            	<form action="loginhelp.html"> <!-- creates a form that opens the register.html page on submission -->
+					<input type="submit" value="Having Issues logging in? Click here. ">   <!-- creates a submit button with text in it-->
+				</form> <!-- closes the form section-->
+			</div> <!-- closes the loginhelp div-->
+            <br> <!-- creates a new line-->
+		</div><!-- closes the login div-->
+        
+	</body><!-- closes the body-->
+</html> <!-- ends the HTML code-->
